@@ -1,3 +1,4 @@
+@media (max-width: 992px) {
 #home {
   display: flex;
 }
@@ -235,17 +236,17 @@ body {
 }
 
 .aboutUs, .special-services, .best-doctors, .bg {
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 50px;
-  cursor: pointer;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    cursor: pointer;
+    gap: 10px; 
 }
 
 .aboutUs img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 .special-services {
@@ -253,7 +254,7 @@ body {
 }
 
 .footer {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -261,9 +262,9 @@ body {
 }
 
 .footer-section {
-  flex: 1 1 200px; 
-  margin: 50px 20px;
-  min-width: 200px;
+  flex: 1 1 100px; 
+  margin: 20px 20px;
+  min-width: 150px;
 }
 
 .footer-section ul {
@@ -291,6 +292,7 @@ body {
   background-color: rgb(213, 226, 226);
   display: flex;
   align-items: center;
+  padding: 10px;
 }
 
 #sub-here {
@@ -390,6 +392,7 @@ body {
   margin-top: 10px;
   color: rgb(25, 57, 83);
 }
+}
 @media (max-width: 600px) {
   .solutions{
     flex-direction: column;
@@ -405,7 +408,6 @@ body {
   }
 
   #home-container, .book-doctor, .appointment, .submit, .specialists{
-    flex-direction: column;
     gap: 10px;
   }
   .special-services{
@@ -427,6 +429,7 @@ body {
     margin: 50px 0;
   }
 }
+
 @media (max-width: 900px) {
   .navbar ul {
     gap: 10px;
