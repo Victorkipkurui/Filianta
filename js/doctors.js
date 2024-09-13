@@ -1,10 +1,24 @@
-function toggleDetails(doctorId) {
-  const details = document.getElementById(doctorId);
+function openProfileDetails(service) {
+  let url = '';
+   switch (service) {
+       case 'doctor':
+           url = 'profile.html';
+           break;
+       case 'doctor1':
+           url = 'doctor.html';
+           break;
+       case 'pain-management':
+           url = 'pain-management.html';
+           break;
+       case 'postnatal-care':
+           url = 'postnatal-care.html';
+           break;
+       case 'nicu':
+           url = 'nicu.html';
+           break;
+       default:
+           url = 'index.html'; 
+   }
 
-  if (details.style.display === "none" || details.style.display === "") {
-    details.style.display = "block";
-
-  } else {
-    details.style.display = "none";
-  }
-}
+       window.location.href = url;
+   }

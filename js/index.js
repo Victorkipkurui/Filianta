@@ -4,8 +4,8 @@ function openServiceDetails(service) {
         case 'all':
             url = 'all.html';
             break;
-        case 'labor-delivery':
-            url = 'labor-delivery.html';
+        case 'doctor':
+            url = 'profile.html';
             break;
         case 'pain-management':
             url = 'pain-management.html';

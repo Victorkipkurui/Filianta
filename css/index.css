@@ -1,4 +1,3 @@
-@media (max-width: 992px) {
 #home {
   display: flex;
 }
@@ -391,7 +390,6 @@ body {
   font-size: 1.2em;
   margin-top: 10px;
   color: rgb(25, 57, 83);
-}
 }
 @media (max-width: 600px) {
   .solutions{
