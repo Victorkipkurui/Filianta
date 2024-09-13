@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between; 
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 10px;
   margin: 30px 0;
 }
 
@@ -62,7 +62,7 @@
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 10px;
   margin: 0;
   padding: 0;
 }
@@ -75,7 +75,7 @@
   text-decoration: none;
   color: #2c4964;
   font-size: 16px;
-  padding: 5px 10px;
+  padding: 5px 5px;
 }
 
 .button {
@@ -180,12 +180,13 @@ body {
 #home-container, .book-doctor, .appointment, .submit {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px;
   margin-bottom: 30px;
 }
 
 .book-doctor {
-  margin-top: 100px;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .sign {
@@ -193,8 +194,8 @@ body {
 }
 
 .home-image {
-  height: 450px;
-  width: 600px;
+  height: 400px;
+  width: 500px;
 }
 
 .bg-color4 {
@@ -208,7 +209,7 @@ body {
 .text-content {
   text-align: left;
   align-items: end;
-  width: 30%;
+  width: 0%;
 }
 
 .col {
@@ -390,8 +391,8 @@ body {
   color: rgb(25, 57, 83);
 }
 @media (max-width: 600px) {
-  .header, .navbar, .home-buttons, .solutions, .specialists, .aboutUs, .special-services, .best-doctors, .footer {
-   
+  .solutions{
+    flex-direction: column;
   }
 
   .home-image {
@@ -403,8 +404,14 @@ body {
     width: 100%;
   }
 
-  #home-container, .book-doctor, .appointment, .submit {
+  #home-container, .book-doctor, .appointment, .submit, .specialists{
     flex-direction: column;
+    gap: 10px;
+  }
+  .special-services{
+    display: grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto;
   }
 
   #looking {
@@ -431,6 +438,7 @@ body {
 
   .home-image {
     height: 400px;
+    margin-top: 10px;
   }
 
   .stats-container {

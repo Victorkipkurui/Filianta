@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor's Profile - Filianata Hospital</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .profile-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 50px;
+    }
+
+    .profile-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-header h1 {
+      font-size: 32px;
+      color: #1e44ec;
+    }
+
+    .profile-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .profile-card img {
+      border-radius: 8px;
+      margin-right: 20px;
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 2;
+    }
+
+    .profile-info h2 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .profile-info p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .profile-info .specialty, 
+    .profile-info .experience {
+      font-weight: bold;
+      color: #1e44ec;
+      margin-bottom: 10px;
+    }
+
+    .profile-bio {
+      margin-top: 20px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      .profile-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .profile-card img {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+
+      .profile-info {
+        flex: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+
+    <div class="profile-card">
+      <!-- Doctor's Image -->
+      <img src="images/doctor.jpg" alt="Dr. Jane Doe">
+
+      <!-- Doctor's Info -->
+      <div class="profile-info">
+        <h2>Dr. Jane Doe</h2>
+        <p class="specialty">Specialty: Cardiology</p>
+        <p class="experience">Years of Experience: 15 years</p>
+        <p>Qualifications: MBBS, MD (Cardiology), FACC</p>
+
+        <!-- Bio -->
+        <div class="profile-bio">
+          <p>Dr. Jane Doe is one of the leading cardiologists at Filianata Hospital. With over 15 years of experience in treating heart-related conditions, she has helped countless patients with personalized care and advanced treatments.</p>
+          <p>Dr. Doe specializes in diagnosing and treating coronary artery disease, heart failure, arrhythmias, and other cardiac conditions. She is dedicated to using the latest medical advancements in cardiology to provide the highest quality care to her patients.</p>
+          <p>In her free time, Dr. Doe enjoys teaching medical students, conducting research in cardiology, and staying updated with the latest developments in cardiovascular health.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

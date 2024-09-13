@@ -6,6 +6,8 @@
     <title>Filianta Hospital</title>
     <link href="images/first-aid-kit.png" rel="icon">
     <link href="css/index.css" rel="stylesheet">
+
+  </head>
     <style>
       #button {
         padding: 10px 10px;
@@ -67,7 +69,7 @@
           <div class="sign">
             <input type="text" class="home-input" placeholder="Sign up with Email">
             <form action="signup.html">
-              <button style="background-color: #0056b3;; border: none; color: white; padding: 10px 20px;" >Sign Up</button>
+              <button class="buttons">SignUp</button>
             </form>
           </div>
           <div class="home-buttons">
@@ -82,7 +84,7 @@
           </div>
         </div>
         <div>
-          <img  class="home-image" src="images/surgery-1822458_1280.jpg" alt="home">
+          <img class="home-image" src="images/surgery-1822458_1280.jpg" alt="home">
         </div>
       </div>
     </div>
@@ -114,46 +116,55 @@
         <h3> All Specialist</h3>
         <div >Our hospital offers specialized medical services, including advanced cardiac care, neurology, and oncology treatments.</div></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color3">
         <img src="images/data safety.jpg">
         <h3>Private & Secure</h3>
-        <p>At our hospital, we prioritize the security of your personal and medical data by implementing advanced encryption protocols and secure access controls.</p>
+        <p>At our hospital, we prioritize the security of your personal and medical data by implementing advanced encryption protocols and secure access controls.</p></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color3">
         <img src="images/customer-service-1433639_1280.png">
         <h3> Million Customers</h3>
-        <p>Our hospital proudly serves over a million customers, providing top-quality healthcare services tailored to meet diverse medical needs.</p>
+        <p>Our hospital proudly serves over a million customers, providing top-quality healthcare services tailored to meet diverse medical needs.</p></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color3">
         <img src="images/chatbot-4071274_1280.jpg">
         <h3> Chatbot Support</h3>
-        <p>Our hospital now offers 24/7 chatbot services to assist patients with appointment scheduling, medical inquiries, and more.</p>
+        <p>Our hospital now offers 24/7 chatbot services to assist patients with appointment scheduling, medical inquiries, and more.</p></a>
       </div>
     </div>
     <div class="special-services">
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color">
         <img src="images/reynardo-etenia-wongso-EHmoH8aCQqU-unsplash.jpg">
-        <h4>Baby Health</h4>
+        <h4>Baby Health</h4></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color">
         <img src="images/stomach-1051854_1280.png">
-        <h4>Stomack</h4>
+        <h4>Stomack</h4></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color">
         <img src="images/pyschiarity.jpg">
-        <h4>Psychiarity</h4>
+        <h4>Psychiarity</h4></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color">
         <img src="images/urology.jpg">
-        <h4>Urology</h4>
+        <h4>Urology</h4></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color">
         <img src="images/dermatologist-6853066_1280.png">
-        <h4>Dermatology</h4>
+        <h4>Dermatology</h4></a>
       </div>
+      <a onclick="openServiceDetails('all')" class="js-more">
       <div class="bg-color">
         <img src="images/infectious.jpg">
-        <h4>Infectious Disease</h4>
+        <h4>Infectious Disease</h4></a>
       </div>
     </div>
     <div>
@@ -240,7 +251,7 @@
         </div> 
       </div>
       <div>
-        <img style="width:600px; height: 400px;" class="home-image" src="images/ambulance-2901017_1280.jpg">
+        <img class="home-image" src="images/ambulance-2901017_1280.jpg">
       </div>
     </div>
     <div class="appointment">
@@ -303,7 +314,7 @@
           <ul>
             <li><a href="delivery.html">Delivery Support</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="Terms of service.html">Terms of Use</a></li>
+            <li><a href="terms of service.html">Terms of Use</a></li>
             <li><a href="private policy.html">Private Policy</a></li>
           </ul>
         </div>
