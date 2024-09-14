@@ -367,7 +367,7 @@ body {
   background-color: #dbeefd;
   padding: 10px;
   color: rgb(25, 57, 83);
-  margin: 100px 200px;
+  margin: 50px 200px;
 }
 
 .stat-item {
@@ -487,4 +487,46 @@ body {
     margin: 10px;
    
   }
+}
+#videoModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  max-width: 500px;
+  max-height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+
+#videoModalContent {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+#videoPlayer{
+  max-width: 600px;
+  width: 100%;
 }
