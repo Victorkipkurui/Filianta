@@ -1,5 +1,6 @@
 #home {
   display: flex;
+  max-width: 1000px;
 }
 
 .header {
@@ -45,14 +46,6 @@
   height: 50px;
   width: 50px;
 }
-
-#analysis {
-  background-color: #1e44ec;
-  padding: 50px;
-  margin: 50px;
-  margin-bottom: 100px;
-}
-
 .navbar {
   flex: 2;
   display: flex;
@@ -99,6 +92,8 @@ body {
   font-size: medium;
   color: rgb(46, 46, 110);
   line-height: 1.6;
+  max-width: 1000px;
+  width: 100%;
 }
 
 .navbar-links {
@@ -182,6 +177,7 @@ body {
   justify-content: space-between;
   padding: 0px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .book-doctor {
@@ -367,7 +363,8 @@ body {
   background-color: #dbeefd;
   padding: 10px;
   color: rgb(25, 57, 83);
-  margin: 50px 200px;
+  width: 100%;
+  
 }
 
 .stat-item {
@@ -395,7 +392,6 @@ body {
   .solutions{
     flex-direction: column;
   }
-
   .home-image {
     width: 100%;
     height: auto;
@@ -405,8 +401,10 @@ body {
     width: 100%;
   }
 
-  #home-container, .book-doctor, .appointment, .submit, .specialists{
+  #home-container, .book-doctor, .appointment, .submit, .specialists,.special-services{
     gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .special-services{
     display: grid;
@@ -525,8 +523,9 @@ body {
 video {
   width: 100%;
   height: auto;
+  align-items: center;
 }
 #videoPlayer{
-  max-width: 600px;
+  max-width: 500px;
   width: 100%;
 }
