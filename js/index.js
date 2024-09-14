@@ -68,27 +68,22 @@ if (counter.id === 'count') {
     }
 });
 
-const modal = document.getElementById("videoModal");
 const btn = document.getElementById("playButton");
 const span = document.getElementsByClassName("close")[0];
 const video = document.getElementById("videoPlayer");
 
 btn.onclick = function() {
-modal.style.display = "flex";
 video.play();
 }
 
-// When the user clicks on (x), close the modal and pause the video
 span.onclick = function() {
-modal.style.display = "none";
 video.pause();
 }
-
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-if (event.target == modal) {
-    modal.style.display = "none";
-    video.pause();
-}
+    if (event.target !== video && event.target !== playButton){
+        if (!video.paused) { 
+          video.pause();
+        }
+    }
 }
     

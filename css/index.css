@@ -68,7 +68,7 @@
 }
 
 .header-2 {
-  font-size: larger;
+  font-size: large;
 }
 
 .navbar ul li a {
@@ -209,7 +209,7 @@ body {
 .text-content {
   text-align: left;
   align-items: end;
-  width: 50%;
+  width: 40%;
 }
 
 .col {
