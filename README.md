@@ -12,21 +12,21 @@ Usage
 Contributing
 License
 Contact
-About the Project
+<h2>About the Project</h2>
 The Filianta Hospital Website is a comprehensive hospital management system designed to enhance the interaction between patients, healthcare providers, and hospital administration. This system facilitates online appointment bookings, patient management, and offers detailed information on hospital services and departments.
 
-Key Objectives:
+<h2>Key Objectives:</h2>
 Simplify the process of booking and managing appointments.
 Improve communication between patients and healthcare providers.
 Offer a centralized platform for accessing medical records and hospital services.
-Features
+<h2>Features</h2>
 Appointment Booking: Patients can book, view, and cancel appointments with their preferred doctors.
 Doctor Profiles: Detailed profiles for each doctor, including their specializations and available slots.
 Patient Dashboard: Personalized dashboard for patients to manage appointments, view medical history, and access test results.
 Admin Panel: Secure access for hospital staff to manage appointments, patient records, and website content.
 Responsive Design: Mobile-friendly layout ensuring accessibility across all devices.
 Search and Filter: Easily find doctors or services based on name, specialty, or department.
-Tech Stack
+<h2>Tech Stack</h2>
 Frontend:
 React
 Tailwind CSS
@@ -40,10 +40,10 @@ Others:
 Axios (for API calls)
 JWT (for authentication)
 Docker (for containerization)
-Getting Started
+<h2>Getting Started</h2>
 Follow these instructions to set up the Filianta Hospital Website project locally.
 
-Prerequisites
+<h3>Prerequisites</h3>
 Node.js and npm installed
 Python 3.8 or higher
 PostgreSQL (or SQLite for development)
