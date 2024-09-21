@@ -73,11 +73,10 @@ const span = document.getElementsByClassName("close")[0];
 const video = document.getElementById("videoPlayer");
 
 btn.onclick = function(event) {
-  event.stopPropagation(); 
-  video.play();
-}
-if(video.paused){
-   video.play()
-}else{
-   video.pause()
+  event.stopPropagation();
+  if (video.paused) {
+    video.play();
+  } else {
+    video.pause();
+  }
 }

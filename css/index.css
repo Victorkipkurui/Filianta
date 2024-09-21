@@ -382,7 +382,11 @@ body {
   border-right: 1px solid #333;
   flex: 1;
 }
-
+.perce{
+  display: flex;
+  gap: 0;
+  justify-content: center;
+}
 .stat-item:last-child {
   border-right: none;
 }
