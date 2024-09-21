@@ -81,7 +81,7 @@ video.pause();
 }
 window.onclick = function(event) {
     if (event.target !== video && event.target !== playButton){
-        if (!video.paused) { 
+        if (!video.pause) { 
           video.pause();
         }
     }
