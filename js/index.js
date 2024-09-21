@@ -72,18 +72,23 @@ const btn = document.getElementById("playButton");
 const span = document.getElementsByClassName("close")[0];
 const video = document.getElementById("videoPlayer");
 
-btn.onclick = function() {
-video.play();
+btn.onclick = function(event) {
+  event.stopPropagation(); // Prevent triggering window click event
+  video.play();
 }
 
-span.onclick = function() {
-video.pause();
+span.onclick = function(event) {
+  event.stopPropagation(); // Prevent triggering window click event
+  video.pause();
 }
+
 window.onclick = function(event) {
-    if (event.target !== video && event.target !== playButton){
-        if (!video.pause) { 
-          video.pause();
-        }
+  // Check if the clicked target is not the video or the play button
+  if (event.target !== video && event.target !== btn && event.target !== span) {
+    if (!video.paused) { 
+      video.pause();
     }
+  }
 }
+
     
