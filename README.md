@@ -1,7 +1,7 @@
-Filianta Hospital Website
+<h1>Filianta Hospital Website</h1>
 Welcome to the official repository of the Filianta Hospital Website project. This platform is designed to streamline the management of hospital activities such as booking appointments, accessing patient information, and providing updates on hospital services.
 
-Table of Contents
+<h2>Table of Contents</h2>
 About the Project
 Features
 Tech Stack
