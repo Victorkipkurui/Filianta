@@ -73,22 +73,11 @@ const span = document.getElementsByClassName("close")[0];
 const video = document.getElementById("videoPlayer");
 
 btn.onclick = function(event) {
-  event.stopPropagation(); // Prevent triggering window click event
+  event.stopPropagation(); 
   video.play();
 }
-
-span.onclick = function(event) {
-  event.stopPropagation(); // Prevent triggering window click event
-  video.pause();
+if(video.paused){
+   video.play()
+}else{
+   video.pause()
 }
-
-window.onclick = function(event) {
-  // Check if the clicked target is not the video or the play button
-  if (event.target !== video && event.target !== btn && event.target !== span) {
-    if (!video.paused) { 
-      video.pause();
-    }
-  }
-}
-
-    
